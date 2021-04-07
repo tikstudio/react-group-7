@@ -3,6 +3,7 @@ import express from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
+import './services/crone';
 
 import indexRouter from './routes/index';
 import authorization from './middlewares/authorization';
