@@ -1,0 +1,36 @@
+{
+  "name": "authorization",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node -r esm -r dotenv/config ./bin/www dotenv_config_path=.env.prodaction",
+    "dev": "nodemon -r esm -r dotenv/config ./bin/www",
+    "migrate": "node -r esm -r dotenv/config ./bin/migrate.js dotenv_config_path=.env.prodaction",
+    "migrate-dev": "node -r esm -r dotenv/config ./bin/migrate.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "moment": "^2.29.1",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7"
+  }
+}
